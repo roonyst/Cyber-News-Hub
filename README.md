@@ -1,22 +1,21 @@
 # Sinhala Cyber News Hub
 
-A responsive Sinhala-language cybersecurity news website starter.
+Responsive Sinhala-language cybersecurity news website starter.
 
-## Important
-This version is a **front-end demo**. The included news items are illustrative educational content, not verified live news. The source links point to the publications' websites. No RSS/API fetch or automatic translation is connected yet.
+## Current state
+- Search, category filtering, sorting, daily briefing dialog and source list are implemented.
+- All 21 selected sources are listed.
+- `sources.json` records candidate feed endpoints and verification notes.
+- `sources.js` displays the source links and feed links/statuses.
 
-## Files
-- `index.html` — page structure
-- `style.css` — responsive dark theme
-- `script.js` — demo news data, search, filters, sort and daily briefing dialog
+**Important:** This is not yet connected to live automatic news ingestion or automatic Sinhala translation. Some RSS URLs are candidate endpoints, not confirmed working feeds. A scheduled fetcher must test feeds, log failures, deduplicate items, translate headlines/summaries and write a JSON file consumed by the page.
 
 ## Publish on GitHub Pages
-1. Create a GitHub repository (for example `sinhala-cyber-news`).
-2. Upload all three files (`index.html`, `style.css`, `script.js`) to the repository root.
+1. Create a GitHub repository.
+2. Upload all files in this folder to the repository root.
 3. Open **Settings → Pages**.
-4. Under Build and deployment, choose **Deploy from a branch**.
-5. Select branch `main` and folder `/ (root)`, then Save.
-6. Wait for GitHub Pages to publish and open the provided `https://USERNAME.github.io/REPOSITORY/` address.
+4. Choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
+5. Open the GitHub Pages URL shown by GitHub.
 
-## Next steps for live news
-Add a scheduled GitHub Actions workflow that reads permitted RSS feeds, normalizes dates and URLs, removes duplicates, and writes a JSON data file. Then add a translation step through a provider whose terms and free limits meet your needs. Do not put API keys in client-side JavaScript. Review each publisher's terms and link back to the original article.
+## Live-news implementation
+Use a scheduled GitHub Actions workflow or another server-side job to fetch feeds. Avoid fetching feeds directly in browser JavaScript because cross-origin restrictions often block it. Keep API keys in server-side secrets, never in public JavaScript. Respect each publisher's RSS terms and link to the original article. Reuters does not currently have a dependable official public RSS feed; the listed Google News query is a third-party alternative.

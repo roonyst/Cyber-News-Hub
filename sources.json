@@ -1,0 +1,152 @@
+{
+  "note": "Feed URLs marked check are candidate endpoints and must be tested by a scheduled fetcher before treated as live. verified means an endpoint was found in source research; verified-page means the source RSS page was found. Reuters uses a Google News site-restricted alternative, not direct Reuters RSS.",
+  "sources": [
+    {
+      "name": "The Cyber Post",
+      "url": "https://thecyberpost.com/",
+      "category": "Cybersecurity news",
+      "status": "check",
+      "feed": "https://thecyberpost.com/feed/"
+    },
+    {
+      "name": "Dark Web Informer",
+      "url": "https://darkwebinformer.com/",
+      "category": "Dark web / cybercrime",
+      "status": "check",
+      "feed": "https://darkwebinformer.com/feed/"
+    },
+    {
+      "name": "Reuters Cybersecurity",
+      "url": "https://www.reuters.com/technology/cybersecurity/",
+      "category": "Major incidents / policy",
+      "status": "alternative",
+      "feed": "https://news.google.com/rss/search?q=site%3Areuters.com%2Ftechnology%2Fcybersecurity&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Cybersecurity News",
+      "url": "https://cybersecuritynews.com/",
+      "category": "Threats / vulnerabilities",
+      "status": "check",
+      "feed": "https://cybersecuritynews.com/feed/"
+    },
+    {
+      "name": "Cyber Insider",
+      "url": "https://cyberinsider.com/",
+      "category": "Privacy / security",
+      "status": "check",
+      "feed": "https://cyberinsider.com/feed/"
+    },
+    {
+      "name": "SecurityOnline",
+      "url": "https://securityonline.info/",
+      "category": "Vulnerabilities / malware",
+      "status": "verified",
+      "feed": "https://securityonline.info/feed/"
+    },
+    {
+      "name": "IT Security News",
+      "url": "https://www.itsecuritynews.info/",
+      "category": "Aggregated security news",
+      "status": "check",
+      "feed": "https://www.itsecuritynews.info/feed/"
+    },
+    {
+      "name": "DigiWatch",
+      "url": "https://dig.watch/",
+      "category": "Digital policy / governance",
+      "status": "check",
+      "feed": "https://dig.watch/feed"
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/",
+      "category": "Threats / malware / breaches",
+      "status": "verified-page",
+      "feed": "https://www.bleepingcomputer.com/rss-feeds/"
+    },
+    {
+      "name": "Cybersecurity Intelligence",
+      "url": "https://www.cybersecurityintelligence.com/",
+      "category": "Security intelligence",
+      "status": "check",
+      "feed": "https://www.cybersecurityintelligence.com/feed/"
+    },
+    {
+      "name": "CyberKendra",
+      "url": "https://www.cyberkendra.com/",
+      "category": "Security research / news",
+      "status": "check",
+      "feed": "https://www.cyberkendra.com/feeds/posts/default?alt=rss"
+    },
+    {
+      "name": "TechCrunch Security",
+      "url": "https://techcrunch.com/category/security/",
+      "category": "Technology / security",
+      "status": "verified",
+      "feed": "https://techcrunch.com/category/security/feed/"
+    },
+    {
+      "name": "The Hacker News",
+      "url": "https://thehackernews.com/",
+      "category": "Threats / vulnerabilities",
+      "status": "verified",
+      "feed": "https://thehackernews.com/feeds/posts/default?alt=rss"
+    },
+    {
+      "name": "The Cyber Express",
+      "url": "https://thecyberexpress.com/",
+      "category": "Cybersecurity news",
+      "status": "verified",
+      "feed": "https://thecyberexpress.com/feed/"
+    },
+    {
+      "name": "gHacks",
+      "url": "https://www.ghacks.net/",
+      "category": "Technology / privacy / security",
+      "status": "verified",
+      "feed": "https://www.ghacks.net/feed/"
+    },
+    {
+      "name": "MEMRI Cyber & Jihad Lab",
+      "url": "https://www.memri.org/cjlab",
+      "category": "Extremism / online threats",
+      "status": "manual",
+      "feed": ""
+    },
+    {
+      "name": "GBHackers",
+      "url": "https://gbhackers.com/",
+      "category": "Threats / vulnerabilities",
+      "status": "check",
+      "feed": "https://gbhackers.com/feed/"
+    },
+    {
+      "name": "The Record",
+      "url": "https://therecord.media/",
+      "category": "Cybercrime / policy",
+      "status": "check",
+      "feed": "https://therecord.media/feed"
+    },
+    {
+      "name": "Hendry Adrian",
+      "url": "https://www.hendryadrian.com/",
+      "category": "Security resources / RSS lists",
+      "status": "manual",
+      "feed": ""
+    },
+    {
+      "name": "Mobile ID World",
+      "url": "https://mobileidworld.com/industry-news/",
+      "category": "Identity / biometrics",
+      "status": "check",
+      "feed": "https://mobileidworld.com/feed/"
+    },
+    {
+      "name": "Security Affairs",
+      "url": "https://securityaffairs.com/",
+      "category": "Cybersecurity news",
+      "status": "check",
+      "feed": "https://securityaffairs.com/feed"
+    }
+  ]
+}
