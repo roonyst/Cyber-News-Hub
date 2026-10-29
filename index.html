@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="ලෝක සයිබර් ආරක්ෂණ පුවත් සිංහලෙන් එකම තැනකින්.">
+  <title>Cyber News Hub | සිංහල</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Cyber News Hub මුල් පිටුව">
+      <span class="brand-icon">⌁</span>
+      <span><strong>CYBER NEWS HUB</strong><small>ලෝක සයිබර් පුවත් · සිංහලෙන්</small></span>
+    </a>
+    <div class="top-actions">
+      <span id="lastUpdated" class="updated">Demo පුවත්</span>
+      <button id="refreshBtn" class="button button-outline" type="button">↻ යාවත්කාලීන කරන්න</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> CYBERSECURITY INTELLIGENCE</span>
+        <h1>ලෝක සයිබර් පුවත්<br><span>සිංහලෙන් එකම තැනකින්.</span></h1>
+        <p>සයිබර් ප්‍රහාර, දත්ත කාන්දුවීම්, අවදානම් සහ ආරක්ෂක අනතුරු ඇඟවීම් — මූලාශ්‍ර සබැඳි සමඟ.</p>
+        <div class="hero-stats">
+          <div><strong id="totalCount">12</strong><span>පුවත්</span></div>
+          <div><strong>06</strong><span>ප්‍රධාන කාණ්ඩ</span></div>
+          <div><strong>24/7</strong><span>පුවත් කියවීම</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="shield"><span>⌑</span><i></i></div>
+        <div class="float-card card-top"> <span class="mini-dot"></span> THREAT INTELLIGENCE</div>
+        <div class="float-card card-bottom"><b>SECURE</b><span>Monitor · Analyze · Protect</span></div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">i</span>
+      <p><strong>Demo අනුවාදය:</strong> දැනට පෙන්වන්නේ ආදර්ශ පුවත් පමණි. සජීවී පුවත් ලබාගැනීමට RSS/API සහ ස්වයංක්‍රීය යාවත්කාලීන කිරීම සකස් කළ යුතුය. සෑම පුවතකම මුල් මූලාශ්‍රය බලන්න.</p>
+    </section>
+
+    <section class="daily-panel">
+      <div>
+        <span class="section-kicker">DAILY BRIEFING</span>
+        <h2>දිනපතා සාරාංශය</h2>
+        <p>වැදගත් පුවත් කිහිපයක් තෝරාගෙන කෙටි සාරාංශයක් කියවන්න.</p>
+      </div>
+      <button id="briefingBtn" class="button button-primary" type="button">අද සාරාංශය බලන්න <span>↗</span></button>
+    </section>
+
+    <section class="news-section">
+      <div class="section-heading">
+        <div><span class="section-kicker">LATEST UPDATES</span><h2>නවතම පුවත්</h2></div>
+        <span id="resultCount" class="result-count">පුවත් 12ක්</span>
+      </div>
+      <div class="toolbar">
+        <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="පුවත්, තර්ජන හෝ මූලාශ්‍ර සොයන්න..." aria-label="පුවත් සොයන්න"></label>
+        <select id="sortSelect" aria-label="පුවත් අනුපිළිවෙල"><option value="newest">අලුත්ම පළමුව</option><option value="oldest">පැරණිම පළමුව</option><option value="title">සිරස්තලය අනුව</option></select>
+      </div>
+      <div id="categoryFilters" class="filters" aria-label="පුවත් කාණ්ඩ">
+        <button class="filter active" data-category="all">සියලු පුවත්</button>
+        <button class="filter" data-category="Ransomware">Ransomware</button>
+        <button class="filter" data-category="Data Breach">Data Breaches</button>
+        <button class="filter" data-category="Vulnerability">Vulnerabilities</button>
+        <button class="filter" data-category="Malware">Malware</button>
+        <button class="filter" data-category="AI Security">AI Security</button>
+        <button class="filter" data-category="Threat Intelligence">Threat Intelligence</button>
+      </div>
+      <div id="newsGrid" class="news-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden><span>⌕</span><h3>පුවත් හමු වුණේ නැහැ</h3><p>වෙනත් වචනයක් හෝ කාණ්ඩයක් භාවිතා කර බලන්න.</p><button id="clearFilters" class="button button-outline">පෙරහන් ඉවත් කරන්න</button></div>
+    </section>
+
+    <section class="sources-section">
+      <div class="section-heading"><div><span class="section-kicker">TRUST YOUR SOURCES</span><h2>පුවත් මූලාශ්‍ර</h2></div></div>
+      <div class="source-grid">
+        <a class="source-card" href="https://thehackernews.com/" target="_blank" rel="noopener noreferrer"><span class="source-mark blue">THN</span><span><strong>The Hacker News</strong><small>Cybersecurity news & research</small></span><b>↗</b></a>
+        <a class="source-card" href="https://www.bleepingcomputer.com/" target="_blank" rel="noopener noreferrer"><span class="source-mark purple">BC</span><span><strong>BleepingComputer</strong><small>Threats, breaches & malware</small></span><b>↗</b></a>
+        <a class="source-card" href="https://www.securityweek.com/" target="_blank" rel="noopener noreferrer"><span class="source-mark cyan">SW</span><span><strong>SecurityWeek</strong><small>Enterprise security</small></span><b>↗</b></a>
+        <a class="source-card" href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank" rel="noopener noreferrer"><span class="source-mark red">CISA</span><span><strong>CISA Advisories</strong><small>Official security alerts</small></span><b>↗</b></a>
+        <a class="source-card" href="https://news.google.com/" target="_blank" rel="noopener noreferrer"><span class="source-mark yellow">GN</span><span><strong>Google News</strong><small>Broader news discovery</small></span><b>↗</b></a>
+        <a class="source-card" href="https://www.ncsc.gov.uk/section/keep-up-to-date/threat-reports" target="_blank" rel="noopener noreferrer"><span class="source-mark green">NCSC</span><span><strong>UK NCSC</strong><small>Threat reports & guidance</small></span><b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-icon">⌁</span><span><strong>CYBER NEWS HUB</strong><small>සිංහලෙන් සයිබර් ආරක්ෂණ දැනුම</small></span></a>
+    <p>මෙය ආරම්භක demo වෙබ් අඩවියකි. පුවත් තහවුරු කිරීමට මුල් මූලාශ්‍රය කියවන්න.</p>
+  </footer>
+
+  <dialog id="briefingDialog" class="dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="වසන්න">×</button></form>
+    <span class="section-kicker">DAILY BRIEFING · DEMO</span>
+    <h2>දිනපතා සයිබර් පුවත් සාරාංශය</h2>
+    <p>මෙය demo සාරාංශයකි. සජීවී දත්ත සම්බන්ධ කළ පසු අද දිනයේ තහවුරු කළ පුවත් මෙහි පෙන්විය හැකිය.</p>
+    <ul><li>අලුත් vulnerabilities සඳහා vendor නිවේදන සහ CISA advisories පරීක්ෂා කරන්න.</li><li>Data breach වාර්තා සඳහා බලපෑමට ලක්වූ ආයතනයේ නිල නිවේදනය තහවුරු කරන්න.</li><li>සැක සහිත links හෝ attachments විවෘත කිරීමට පෙර ආරක්ෂක පරීක්ෂාවක් කරන්න.</li></ul>
+    <button id="dialogDone" class="button button-primary">හරි</button>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
